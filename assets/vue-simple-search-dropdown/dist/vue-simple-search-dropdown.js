@@ -219,7 +219,7 @@
                 exit: function t() {
                     if (!this.selected.id) {
                         this.selected = {};
-                        this.searchFilter = ""
+//                    this.searchFilter = ""
                     } else {
                         this.searchFilter = this.selected.name
                     }
