@@ -223,7 +223,7 @@
                     } else {
                         this.searchFilter = this.selected.name
                     }
-                    this.$emit("selected", this.selected);
+//                    this.$emit("selected", this.selected);
                     this.optionsShown = false
                 },
                 keyMonitor: function t(e) {
