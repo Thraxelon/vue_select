@@ -27,7 +27,7 @@ include_once 'class/phhdate.inc.php';
                 <div id="mainArea">
                     {{test}}
                     <!--<Dropdown v-bind:options="[{aid:1,co_name:'option1'},{aid:2,co_name:'option2'},{aid:3,co_name:'option3'}]" ></Dropdown>-->
-                    <Dropdown v-bind:options="customerList" v-on:filter='getSearchCustomer' v-on:selected='customerSelected'></Dropdown>
+                    <Dropdown v-bind:options="customerList" v-on:filter='' v-on:selected='customerSelected'></Dropdown>
                     <div>
                         Selected :<br>
                         Cid = {{cid}}<br>
@@ -158,13 +158,13 @@ include_once 'class/phhdate.inc.php';
                         })
                     },
                     customerSelected: function (val) {
-                        console.log('selected');
-                        this.aid = val.cid;
-                        this.co_name = val.co_name;
+                        console.log('selected ' + val.id);
+                        this.cid = val.id;
+                        this.co_name = val.name;
                     }
                 },
                 mounted: function () {
-
+                    this.getSearchCustomer('');
                 }
             });
         </script>
