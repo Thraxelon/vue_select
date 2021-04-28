@@ -27,7 +27,7 @@ include_once 'class/phhdate.inc.php';
                 <div id="mainArea">
                     {{test}}
                     <!--<Dropdown v-bind:options="[{aid:1,co_name:'option1'},{aid:2,co_name:'option2'},{aid:3,co_name:'option3'}]" ></Dropdown>-->
-                    <Dropdown v-bind:options="customerList" v-on:filter='getSearchCustomer' v-on:selected='customerSelected'></Dropdown>
+                    <customerdropdown v-bind:options="customerList" v-on:filter='getSearchCustomer' v-on:selected='customerSelected'></customerdropdown>
                     <div>
                         Selected :<br>
                         Cid = {{cid}}<br>

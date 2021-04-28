@@ -27,8 +27,8 @@
 
 <script>
   export default {
-    name: 'Dropdown',
-    template: 'Dropdown',
+    name: 'customerdropdown',
+    template: 'customerdropdown',
     props: {
       name: {
         type: String,

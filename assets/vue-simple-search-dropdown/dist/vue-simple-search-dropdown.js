@@ -140,8 +140,8 @@
             }
         }
         e.default = {
-            name: "Dropdown",
-            template: "Dropdown",
+            name: "customerdropdown",
+            template: "customerdropdown",
             props: {
                 options: {
                     type: Array,
